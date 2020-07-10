@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Delivery food</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+
+  <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+</head>
+<style>
+#back-top{background:#ff5600;height:50px;width:50px;right:31px;bottom:18px;position:fixed;color:#fff;font-size:20px;text-align:center;border-radius:50%;line-height:48px;border:2px solid transparent;box-shadow:0 0 10px 3px rgba(108,98,98,0.2)}@media (max-width: 575px){#scrollUp,#back-top{right:16px}}#scrollUp a i,#back-top a i{color:#fff;display:block;line-height:50px}#scrollUp:hover{color:#fff}
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('photo/main.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.py-5{
+  background-color: gray;
+  color: white;
+}
+.card-img-top{
+  border-bottom: 2px solid gray;
+}
+#chick_d {display: none;}
+#pizza_d {display: none;}
+#dduck_d {display: none;}
+#one_d {display: none;}
+#jjang_d {display: none;}
+#franchise_d {display: none;}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+
+$(document).ready( function() {
+
+  //	fadeOut/fadeIn/fadeToggle 효과
+  $('#chick').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#chick_d').fadeIn(100);
+      });
+  });
+  $('#pizza').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#pizza_d').fadeIn(100);
+      });
+  });
+  $('#dduck').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#dduck_d').fadeIn(100);
+      });
+  });
+  $('#one').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#one_d').fadeIn(100);
+      });
+  });
+  $('#jjang').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#jjang_d').fadeIn(100);
+      });
+  });
+  $('#franchise').click(function() {
+      $('#Category').fadeOut(1000, function() {
+        $('#franchise_d').fadeIn(100);
+      });
+  });
+
+
+
+  $('#closeBtn_chick_d').click(function() {
+      $('#chick_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+  $('#closeBtn_pizza_d').click(function() {
+      $('#pizza_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+  $('#closeBtn_dduck_d').click(function() {
+      $('#dduck_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+  $('#closeBtn_one_d').click(function() {
+      $('#one_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+  $('#closeBtn_jjang_d').click(function() {
+      $('#jjang_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+  $('#closeBtn_franchise_d').click(function() {
+      $('#franchise_d').fadeOut(1000, function() {
+        $('#Category').fadeIn(100);
+
+      });
+  });
+
+
+
+});
+</script>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Delivery food</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Category">Category</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header id="Home" class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="font-weight-light">Delivery Food</h1>
+          <p class="lead">배달음식</p>
+        </div>
+      </div>
+    </div>
+    </header>
+    <!-- Page Content -->
+<div id="Category" class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Category</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div id="chick" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/chick.png" alt="">
+    </div>
+    <div id="pizza" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/pizza.png" alt="">
+    </div>
+    <div id="dduck" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/dduck.png" alt="">
+    </div>
+    <div id="one" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/1.png" alt="">
+    </div>
+    <div id="jjang" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/jjang.png" alt="">
+    </div>
+    <div id="franchise" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 btn">
+      <img class="img-fluid img-thumbnail" src="photo/franchise.png" alt="">
+    </div>
+  </div>
+</div>
+  <br>
+  <!-- Page Content -->
+<div id="chick_d" class="container">
+  <div class="card border-0 shadow my-5">
+    <div id="closeBtn_chick_d" style="width: 100%; position: relative;">
+      <img src="photo/close.svg" style="position: absolute;
+      width: 40px;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+      margin: 5px;">
+    </div>
+    <!-- Page Heading -->
+    <h1 class="my-4" style="margin:50px;">Chicken
+    </h1>
+
+    <div class="row" style="margin:50px;">
+
+      <div class="col-lg12">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/318768/"><img class="card-img-top" src="photo/chick1.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/318768/">후라이드참잘하는집-대명점</a>
+                </h4>
+                <p>최소주문금액</p>
+                <h5>14,000</h5>
+                <p class="card-text">영업시간	11:00 - 02:00</p>
+                <p class="card-text">전화번호	050712976111 (요기요 제공 번호)</p>
+                <p class="card-text">대구 남구 대명동 140-23 1층</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/325326/"><img class="card-img-top" src="photo/chick2.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/325326/">티바두마리치킨-대명1호점</a>
+                </h4>
+                <p>최소주문금액</p>
+                <h5>14,000</h5>
+                <p class="card-text">영업시간	12:00 - 23:59</p>
+                <p class="card-text">전화번호	050712981776 (요기요 제공 번호)</p>
+                <p class="card-text">주소	대구 남구 대명동 52-5 1층</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/276644/"><img class="card-img-top" src="photo/chick3.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/276644/">호식이두마리치킨-대구이천점</a>
+                </h4>
+                <p>최소주문금액</p>
+                <h5>14,000</h5>
+                <p class="card-text">영업시간	11:00 - 23:00</p>
+                <p class="card-text">전화번호 050712936866 (요기요 제공 번호)</p>
+                <p class="card-text">대구 남구 이천동 555-3 1층</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+  </div>
+</div>
+<!-- /.container -->
+<!-- Page Content -->
+<div id="pizza_d" class="container">
+<div class="card border-0 shadow my-5">
+  <div id="closeBtn_pizza_d" style="width: 100%; position: relative;">
+    <img src="photo/close.svg" style="position: absolute;
+    width: 40px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5px;">
+  </div>
+  <!-- Page Heading -->
+  <h1 class="my-4" style="margin:50px;">Pizza
+  </h1>
+
+  <div class="row" style="margin:50px;">
+
+    <div class="col-lg12">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/353804/"><img class="card-img-top" src="photo/pizza1.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/353804/">피자나라치킨공주-대구명덕점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>10,000</h5>
+              <p class="card-text">영업시간	13:07 - 00:00</p>
+              <p class="card-text">전화번호	050718609143 (요기요 제공 번호)</p>
+              <p class="card-text">대구 중구 남산동 2002-5 1층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/237480/"><img class="card-img-top" src="photo/pizza2.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/237480/">피자에땅-대명점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>15,900</h5>
+              <p class="card-text">영업시간	11:00 - 23:00</p>
+              <p class="card-text">전화번호	050352597157 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명동 724-16</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/279018/"><img class="card-img-top" src="photo/pizza3.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/279018/">라오니피자-본점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>14,000</h5>
+              <p class="card-text">영업시간	11:00 - 01:40</p>
+              <p class="card-text">전화번호	050712940038 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명동 1882-2 1층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+</div>
+</div>
+<!-- Page Content -->
+<div id="dduck_d" class="container">
+<div class="card border-0 shadow my-5">
+  <div id="closeBtn_dduck_d" style="width: 100%; position: relative;">
+    <img src="photo/close.svg" style="position: absolute;
+    width: 40px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5px;">
+  </div>
+  <!-- Page Heading -->
+  <h1 class="my-4" style="margin:50px;">Snack bar
+  </h1>
+
+  <div class="row" style="margin:50px;">
+
+    <div class="col-lg12">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/402877/"><img class="card-img-top" src="photo/dduck1.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/402877/">떠킨&1994찜닭-교대점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>14,000</h5>
+              <p class="card-text">영업시간	11:00 - 10:59</p>
+              <p class="card-text">전화번호	050718657224 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명동 1794-12 2층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/251600/"><img class="card-img-top" src="photo/dduck2.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/251600/">신불떡볶이-대명점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>14,000</h5>
+              <p class="card-text">영업시간	11:00 - 23:50</p>
+              <p class="card-text">전화번호	050712911990 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명동 1721-24 1층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/467090/"><img class="card-img-top" src="photo/dduck3.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/467090/">Dog&DDuk</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>14,000</h5>
+              <p class="card-text">영업시간	10:00 - 09:59</p>
+              <p class="card-text">전화번호	050352900485 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 이천동 516-16 지하층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+</div>
+</div>
+<!-- /.container -->
+<!-- /.container -->
+
+<div id="one_d" class="container">
+<div class="card border-0 shadow my-5">
+  <div id="closeBtn_one_d" style="width: 100%; position: relative;">
+    <img src="photo/close.svg" style="position: absolute;
+    width: 40px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5px;">
+  </div>
+  <!-- Page Heading -->
+  <h1 class="my-4" style="margin:50px;">Japanese
+  </h1>
+
+  <div class="row" style="margin:50px;">
+
+    <div class="col-lg12">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/287625/"><img class="card-img-top" src="photo/one1.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/287625/">스시201-본점</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>15,000</h5>
+              <p class="card-text">영업시간	11:30 - 22:30</p>
+              <p class="card-text">전화번호	050712946317 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 서구 평리동 1193-21</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/15117/"><img class="card-img-top" src="photo/one2.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/15117/">한스시</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>14,000</h5>
+              <p class="card-text">영업시간	11:00 - 23:50</p>
+              <p class="card-text">전화번호	050712911990 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명동 1721-24 1층</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/14615/"><img class="card-img-top" src="photo/one3.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/14615/">고나야</a>
+              </h4>
+              <p>최소주문금액</p>
+              <h5>15,000</h5>
+              <p class="card-text">영업시간	08:00 - 07:59</p>
+              <p class="card-text">전화번호	050352555169 (요기요 제공 번호)</p>
+              <p class="card-text">주소	대구 남구 대명4동 3048-34 1층 한스시</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+</div>
+</div>
+<!-- /.container -->
+
+<div id="jjang_d" class="container">
+<div class="card border-0 shadow my-5">
+  <div id="closeBtn_jjang_d" style="width: 100%; position: relative;">
+    <img src="photo/close.svg" style="position: absolute;
+    width: 40px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5px;">
+  </div>
+  <!-- Page Heading -->
+<h1 class="my-4" style="margin:50px;">Chinese
+</h1>
+
+<div class="row" style="margin:50px;">
+
+  <div class="col-lg12">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/256534/"><img class="card-img-top" src="photo/jjang1.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/256534/">효동각</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>10,000</h5>
+            <p class="card-text">영업시간	10:30 - 20:10</p>
+            <p class="card-text">전화번호	050712917124 (요기요 제공 번호)</p>
+            <p class="card-text">주소	대구 남구 대명동 143-4</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/55078/"><img class="card-img-top" src="photo/jjang2.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/55078/">천안문반점</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>12,000</h5>
+            <p class="card-text">영업시간	11:00 - 23:50</p>
+            <p class="card-text">전화번호	050712911990 (요기요 제공 번호)</p>
+            <p class="card-text">주소	대구 남구 대명동 1721-24 1층</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/431297/"><img class="card-img-top" src="photo/jjang3.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/431297/">신라짬뽕</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>13,000</h5>
+            <p class="card-text">영업시간	09:30 - 20:20</p>
+            <p class="card-text">전화번호	050352855432 (요기요 제공 번호)</p>
+            <p class="card-text">주소	대구 남구 대명동 54-4 1층</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.col-lg-9 -->
+
+</div>
+<!-- /.row -->
+</div>
+</div>
+<!-- /.container -->
+
+<div id="franchise_d" class="container">
+<div class="card border-0 shadow my-5">
+  <div id="closeBtn_franchise_d" style="width: 100%; position: relative;">
+    <img src="photo/close.svg" style="position: absolute;
+    width: 40px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5px;">
+  </div>
+  <!-- Page Heading -->
+<h1 class="my-4" style="margin:50px;">Franchise
+</h1>
+
+<div class="row" style="margin:50px;">
+
+  <div class="col-lg12">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/303582/"><img class="card-img-top" src="photo/franchise1.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/303582/">버거킹-대구중앙로점</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>12,000</h5>
+            <p class="card-text">영업시간	10:00 - 22:00</p>
+            <p class="card-text">주소	대구 중구 남일동 110-1 현대빌딩 지상 1층</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/327111/"><img class="card-img-top" src="photo/franchise2.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/327111/">맥도날드-대구교대DT점</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>12,000</h5>
+            <p class="card-text">영업시간	09:00 - 23:00</p>
+            <p class="card-text">주소	대구 남구 대명동 1793-5</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/426172/"><img class="card-img-top" src="photo/franchise3.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.yogiyo.co.kr/mobile/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI4F4nuSn9TxlAJrLCIwrrJ8E9xkqoSJ1TKZ84ub4WZq-GjXHV52sRcaAmnmEALw_wcB#/426172/">신라짬뽕</a>
+            </h4>
+            <p>최소주문금액</p>
+            <h5>8,000</h5>
+            <p class="card-text">영업시간	11:00 - 22:00</p>
+            <p class="card-text">전화번호	050352850204 (요기요 제공 번호)</p>
+            <p class="card-text">주소	대구 남구 대명동 1792-8 1층 102호</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.col-lg-9 -->
+
+</div>
+<!-- /.row -->
+</div>
+</div>
+    <!-- Page Content -->
+    <section class="py-5" id="page-bottom">
+    <div class="container">
+      <h2 class="font-weight-ligh">1705030_조성한</h2>
+      <p>한 학기 동안 자신이 배달 시켜 먹은 음식점들 중 일부를 정리</p>
+    </div>
+    </section>
+
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
